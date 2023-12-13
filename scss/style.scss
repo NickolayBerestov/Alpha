@@ -60,22 +60,51 @@ body {
 }
 
 .main-title {
-    color: white;
-    margin-left: 586px;
     margin-top: 222px;
+    margin-bottom: 0px;
     font-family: 'Oswald', sans-serif;
     font-size: 48px;
-    letter-spacing: 0.48px;
     font-weight: normal;
     position: relative;
     z-index: 1;
 }
 
 .about-company {
-    color: white;
-    margin-left: 586px;
     font-size: 24px;
-    letter-spacing: 0.48px;
     z-index: 1;
     position: relative;
+    margin: 0;
+    margin-top: 18px;
+}
+
+.first-screen {
+    color: white;
+    letter-spacing: 0.48px;
+    margin-left: 586px;
+    .link-button {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        padding: 17px 40px;
+        box-sizing: border-box;
+        margin-top: 250px;
+        border: 2px solid white;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.quad-background {
+    width: 444px;
+    height: 789px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 85px;
+    left: 459px;
+}
+
+.link-button-container {
+    margin-top: 46px;
 }
