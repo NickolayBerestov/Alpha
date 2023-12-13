@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("fonts/OpenSans-Regular.ttf") format("truetype");
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSans", sans-serif;
+}
+
+/*.background-container {
+    background-image: url(images/background.jpg);
+}*/
+.header {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.header .navigation-container {
+  display: flex;
+}
+.header .main-logo {
+  width: 261px;
+  height: 80px;
+  padding-left: 134px;
+}
+.header .navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */

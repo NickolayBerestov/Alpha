@@ -1,17 +1,30 @@
+@import 'fonts';
+
 body {
     padding: 0;
     margin: 0;
+    font-family: 'OpenSans', sans-serif;
 }
 
-.main-logo {
-    width: 261px;
-    height: 80px;
-}
-
-.background-container {
+/*.background-container {
     background-image: url(images/background.jpg);
-}
+}*/
 
 .header {
     background-color: rgba(0, 0, 0, 0.6);
+    .navigation-container {
+        display: flex;
+    }
+    .main-logo {
+        width: 261px;
+        height: 80px;
+        padding-left: 134px;
+    }
+    .navigation-list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        
+    }
 }
