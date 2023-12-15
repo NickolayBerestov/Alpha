@@ -3,14 +3,14 @@
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
-  src: url("fonts/OpenSans-Regular.ttf") format("truetype");
+  src: url("src/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Oswald";
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
-  src: url("fonts/Oswald-Regular.ttf") format("truetype");
+  src: url("src\fontsOswald-Regular.ttf") format("truetype");
 }
 html {
   height: 100%;
@@ -29,8 +29,7 @@ body {
 }
 
 .main-header {
-  background: url("images/background.jpg") no-repeat center center/cover;
-  background-repeat: no-repeat;
+  background: url("../images/background.jpg") no-repeat center center/cover;
   height: 100vh;
 }
 

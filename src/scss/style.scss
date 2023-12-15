@@ -1,4 +1,4 @@
-@import 'fonts';
+@import 'fonts.scss';
 
 html {
     height: 100%;
@@ -17,8 +17,7 @@ body {
 }
 
 .main-header {
-    background: url('images/background.jpg') no-repeat center center / cover;
-    background-repeat: no-repeat;
+    background: url('../images/background.jpg') no-repeat center center / cover;
     height: 100vh;
 }
 
