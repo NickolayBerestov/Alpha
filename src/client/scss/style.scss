@@ -32,22 +32,26 @@ body {
         padding-left: 13px;
     }
 
-    .navigation-list {      //Списко с меню
+    .navigation-list {
+        //Списко с меню
         list-style-type: none;
         margin: 0;
         padding: 0;
         align-items: center;
 
-        .navigation-item {     //Элементы меню
+        .navigation-item {
+            //Элементы меню
             display: inline-block;
             font-size: 24px;
         }
 
-        .navigation-link {    //ссылки в меню
+        .navigation-link {
+            //ссылки в меню
             color: white;
             text-decoration: none;
             text-transform: uppercase;
             padding: 26px 45px;
+
             &:hover {
                 background-color: rgba(255, 255, 255, 0.3);
             }
@@ -66,12 +70,13 @@ body {
             rgba(255, 255, 255, 0) 902px);
 
     &-text {
-        padding-top: 222px;
+        padding-top: 240px;
         padding-left: 586px;
 
         .about-company {
             margin: 0;
-            padding-top: 18px;
+            font-size: 24px;
+            padding-top: 45px;
         }
     }
 
@@ -80,11 +85,13 @@ body {
         font-size: 48px;
         font-style: normal;
         font-weight: 400;
+        letter-spacing: 0.48px;
+        line-height: normal;
         margin: 0;
     }
 
     .link-button-container {
-        padding-top: 45px;
+        padding-top: 71px;
 
         .link-button {
             color: white;

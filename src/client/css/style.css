@@ -3,14 +3,14 @@
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
-  src: url("src/fonts/OpenSans-Regular.ttf") format("truetype");
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Oswald";
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
-  src: url("src\fontsOswald-Regular.ttf") format("truetype");
+  src: url("../fonts/Oswald-Regular.ttf") format("truetype");
 }
 html {
   height: 100%;
@@ -71,22 +71,25 @@ body {
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 459px, rgba(0, 0, 0, 0.6) 444px 902px, rgba(255, 255, 255, 0) 902px);
 }
 .first-screen-text {
-  padding-top: 222px;
+  padding-top: 240px;
   padding-left: 586px;
 }
 .first-screen-text .about-company {
   margin: 0;
-  padding-top: 18px;
+  font-size: 24px;
+  padding-top: 45px;
 }
 .first-screen .main-title {
   font-family: "Oswald", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
+  letter-spacing: 0.48px;
+  line-height: normal;
   margin: 0;
 }
 .first-screen .link-button-container {
-  padding-top: 45px;
+  padding-top: 71px;
 }
 .first-screen .link-button-container .link-button {
   color: white;
