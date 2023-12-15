@@ -30,31 +30,28 @@ body {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-left: 58px;
+        padding-left: 13px;
     }
 
-    .navigation-list {
+    .navigation-list {      //Списко с меню
         list-style-type: none;
         margin: 0;
         padding: 0;
         align-items: center;
 
-        .navigation-item {
+        .navigation-item {     //Элементы меню
             display: inline-block;
-            margin-right: 45px;
             font-size: 24px;
         }
 
-        .navigation-item:last-child {
-            margin-right: 0;
-        }
-
-        .navigation-link {
+        .navigation-link {    //ссылки в меню
             color: white;
             text-decoration: none;
-            padding-top: 25px;
-            padding-bottom: 25px;
             text-transform: uppercase;
+            padding: 26px 45px;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.3);
+            }
         }
     }
 }
@@ -68,9 +65,15 @@ body {
             rgba(255, 255, 255, 0) 459px,
             rgba(0, 0, 0, 0.6) 444px 902px,
             rgba(255, 255, 255, 0) 902px);
+
     &-text {
         padding-top: 222px;
         padding-left: 586px;
+
+        .about-company {
+            margin: 0;
+            padding-top: 18px;
+        }
     }
 
     .main-title {
@@ -79,5 +82,21 @@ body {
         font-style: normal;
         font-weight: 400;
         margin: 0;
+    }
+
+    .link-button-container {
+        padding-top: 45px;
+
+        .link-button {
+            color: white;
+            border: 2px solid white;
+            padding: 15px 41px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .link-button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
     }
 }
