@@ -1,5 +1,10 @@
 @import 'fonts.scss';
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     height: 100%;
 }
@@ -33,7 +38,7 @@ body {
     }
 
     .navigation-list {
-        //Списко с меню
+        //Список с меню
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -71,7 +76,7 @@ body {
 
     &-text {
         padding-top: 240px;
-        padding-left: 586px;
+        padding-left: 578px;
 
         .about-company {
             margin: 0;
@@ -103,6 +108,21 @@ body {
 
         .link-button:hover {
             background-color: rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+.screen-about-company {
+    margin: 0;
+    padding-left: 140px;
+    padding-top: 54px;
+
+    .title {
+        margin: 0;
+
+        &-about-company {
+            position: relative;
+            padding-left: 436px;
         }
     }
 }
