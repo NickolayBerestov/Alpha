@@ -116,6 +116,17 @@ body {
     margin: 0;
     padding-left: 140px;
     padding-top: 54px;
+    background-color: #eee;
+
+    .section-about-company {
+        display: flex;
+
+        .image-with-text {
+            display: grid;
+            grid-template-columns: 301px 267px;
+            gap: 20px;
+        }
+    }
 
     .title {
         margin: 0;

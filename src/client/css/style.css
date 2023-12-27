@@ -111,6 +111,15 @@ body {
   margin: 0;
   padding-left: 140px;
   padding-top: 54px;
+  background-color: #eee;
+}
+.screen-about-company .section-about-company {
+  display: flex;
+}
+.screen-about-company .section-about-company .image-with-text {
+  display: grid;
+  grid-template-columns: 301px 267px;
+  gap: 20px;
 }
 .screen-about-company .title {
   margin: 0;
