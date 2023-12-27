@@ -123,8 +123,30 @@ body {
 
         .image-with-text {
             display: grid;
-            grid-template-columns: 301px 267px;
-            gap: 20px;
+            grid-template-areas:
+                                "p1 ."
+                                "p1 p3"
+                                ". p3"
+                                "p3 ."
+                                "p3 p4";
+            row-gap: 20px;
+            column-gap: 20px;
+
+            .photo1 {
+                grid-area: p1;
+            }
+
+            .photo2 {
+                grid-area: p2;
+            }
+
+            .photo3 {
+                grid-area: p3;
+            }
+
+            .photo4 {
+                grid-area: p4;
+            }
         }
     }
 

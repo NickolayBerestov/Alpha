@@ -118,8 +118,21 @@ body {
 }
 .screen-about-company .section-about-company .image-with-text {
   display: grid;
-  grid-template-columns: 301px 267px;
-  gap: 20px;
+  grid-template-areas: "p1 ." "p1 p3" ". p3" "p3 ." "p3 p4";
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.screen-about-company .section-about-company .image-with-text .photo1 {
+  grid-area: p1;
+}
+.screen-about-company .section-about-company .image-with-text .photo2 {
+  grid-area: p2;
+}
+.screen-about-company .section-about-company .image-with-text .photo3 {
+  grid-area: p3;
+}
+.screen-about-company .section-about-company .image-with-text .photo4 {
+  grid-area: p4;
 }
 .screen-about-company .title {
   margin: 0;
