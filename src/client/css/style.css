@@ -116,24 +116,6 @@ body {
 .screen-about-company .section-about-company {
   display: flex;
 }
-.screen-about-company .section-about-company .image-with-text {
-  display: grid;
-  grid-template-areas: "p1 ." "p1 p3" ". p3" "p3 ." "p3 p4";
-  row-gap: 20px;
-  column-gap: 20px;
-}
-.screen-about-company .section-about-company .image-with-text .photo1 {
-  grid-area: p1;
-}
-.screen-about-company .section-about-company .image-with-text .photo2 {
-  grid-area: p2;
-}
-.screen-about-company .section-about-company .image-with-text .photo3 {
-  grid-area: p3;
-}
-.screen-about-company .section-about-company .image-with-text .photo4 {
-  grid-area: p4;
-}
 .screen-about-company .title {
   margin: 0;
   padding: 0;
@@ -149,7 +131,6 @@ body {
   letter-spacing: 1.5px;
   display: flex;
   align-items: center;
-  width: 100%;
   gap: 20px;
 }
 .screen-about-company .title-about-company::before, .screen-about-company .title-about-company::after {

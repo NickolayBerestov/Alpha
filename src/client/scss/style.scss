@@ -120,34 +120,6 @@ body {
 
     .section-about-company {
         display: flex;
-
-        .image-with-text {
-            display: grid;
-            grid-template-areas:
-                                "p1 ."
-                                "p1 p3"
-                                ". p3"
-                                "p3 ."
-                                "p3 p4";
-            row-gap: 20px;
-            column-gap: 20px;
-
-            .photo1 {
-                grid-area: p1;
-            }
-
-            .photo2 {
-                grid-area: p2;
-            }
-
-            .photo3 {
-                grid-area: p3;
-            }
-
-            .photo4 {
-                grid-area: p4;
-            }
-        }
     }
 
     .title {
@@ -165,7 +137,6 @@ body {
             letter-spacing: 1.5px;
             display: flex;
             align-items: center;
-            width: 100%;
             gap: 20px;
 
             &::before,
