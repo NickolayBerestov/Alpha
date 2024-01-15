@@ -116,6 +116,22 @@ body {
 .screen-about-company .section-about-company {
   display: flex;
 }
+.screen-about-company .section-about-company .photo-container {
+  display: flex;
+}
+.screen-about-company .section-about-company .photo-container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+  margin-right: 20px;
+}
+.screen-about-company .section-about-company .photo-container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+}
 .screen-about-company .title {
   margin: 0;
   padding: 0;
