@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    //Стандартные стили для всей страицы
     min-height: 100%;
     padding: 0;
     margin: 0;
@@ -17,6 +18,7 @@ body {
 }
 
 .main-logo {
+    //Логотип АС
     width: 261px;
     margin-left: 134px;
 }
@@ -76,7 +78,7 @@ body {
 
     &-text {
         padding-top: 240px;
-        padding-left: 578px;
+        padding-left: 520px;
 
         .about-company {
             margin: 0;
@@ -116,7 +118,8 @@ body {
     background-color: #eee;
 }
 
-.screen-about-company, .news {
+.screen-about-company,
+.news {
     margin: 0;
     padding-left: 140px;
     padding-top: 54px;
@@ -127,6 +130,7 @@ body {
 
         .photo-container {
             display: flex;
+            padding-left: 50px;
 
             &-left {
                 display: flex;
@@ -182,15 +186,19 @@ body {
             background-position: 0 0, 0 100%;
         }
     }
+
+    .text-about-company {
+        font-family: 'MontserratAlternates', sans-serif;
+        margin: 0;
+        padding: 0;
+        width: 1044px;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 150.42%;
+        letter-spacing: 1.5px;
+    }
 }
 
-.text-about-company {
-    margin: 0;
-    padding: 0;
-    width: 1044px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 150.42%;
-    letter-spacing: 1.5px;
+.news {
+    padding-top: 0px;
 }
