@@ -117,39 +117,50 @@ body {
   background-color: #eee;
 }
 
-.screen-about-company,
-.news {
+.screen-about-company {
   margin: 0;
-  padding-left: 140px;
-  padding-top: 54px;
   height: 100vh;
-}
-.screen-about-company .section-about-company,
-.news .section-about-company {
   display: flex;
 }
-.screen-about-company .section-about-company .photo-container,
-.news .section-about-company .photo-container {
-  display: flex;
-  padding-left: 50px;
-}
-.screen-about-company .section-about-company .photo-container-left,
-.news .section-about-company .photo-container-left {
+.screen-about-company .text-container {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
+}
+.screen-about-company .text-container .title {
+  padding-top: 50px;
+}
+.screen-about-company .text-container .text-about-company {
+  font-family: "MontserratAlternates", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150.42%;
+  letter-spacing: 1.5px;
+  padding-left: 140px;
+  padding-top: 100px;
+}
+
+.photo-container {
+  display: flex;
+  padding-right: 120px;
+}
+.photo-container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   gap: 20px;
   margin-right: 20px;
 }
-.screen-about-company .section-about-company .photo-container-right,
-.news .section-about-company .photo-container-right {
+.photo-container-right {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   gap: 20px;
 }
-.screen-about-company .title,
-.news .title {
+
+.title {
   margin: 0;
   padding: 0;
   position: relative;
@@ -164,9 +175,7 @@ body {
   align-items: center;
   gap: 20px;
 }
-.screen-about-company .title::before, .screen-about-company .title::after,
-.news .title::before,
-.news .title::after {
+.title::before, .title::after {
   content: "";
   display: block;
   width: 100px;
@@ -175,24 +184,11 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 2px, 50% 2px;
 }
-.screen-about-company .title::before,
-.news .title::before {
+.title::before {
   background-position: 0 0, 100% 100%;
 }
-.screen-about-company .title::after,
-.news .title::after {
+.title::after {
   background-position: 0 0, 0 100%;
-}
-.screen-about-company .text-about-company,
-.news .text-about-company {
-  font-family: "MontserratAlternates", sans-serif;
-  margin: 0;
-  padding: 0;
-  width: 1044px;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 150.42%;
-  letter-spacing: 1.5px;
 }
 
 .news {
