@@ -35,7 +35,6 @@ body {
 
 .main-header {
   background: url("../images/background.jpg") no-repeat center center/cover;
-  height: 100vh;
 }
 
 .navigation-container {
@@ -72,7 +71,7 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  min-height: 867px;
+  height: 100vh;
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 459px, rgba(0, 0, 0, 0.6) 444px 902px, rgba(255, 255, 255, 0) 902px);
 }
 .first-screen-text {
@@ -107,36 +106,38 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.screen-about-company {
+.main {
+  background-color: #eee;
+}
+
+.screen-about-company, .news {
   margin: 0;
   padding-left: 140px;
   padding-top: 54px;
-  background-color: #eee;
+  height: 100vh;
 }
-.screen-about-company .section-about-company {
+.screen-about-company .section-about-company, .news .section-about-company {
   display: flex;
 }
-.screen-about-company .section-about-company .photo-container {
+.screen-about-company .section-about-company .photo-container, .news .section-about-company .photo-container {
   display: flex;
 }
-.screen-about-company .section-about-company .photo-container-left {
+.screen-about-company .section-about-company .photo-container-left, .news .section-about-company .photo-container-left {
   display: flex;
   flex-direction: column;
   justify-content: start;
   gap: 20px;
   margin-right: 20px;
 }
-.screen-about-company .section-about-company .photo-container-right {
+.screen-about-company .section-about-company .photo-container-right, .news .section-about-company .photo-container-right {
   display: flex;
   flex-direction: column;
   justify-content: end;
   gap: 20px;
 }
-.screen-about-company .title {
+.screen-about-company .title, .news .title {
   margin: 0;
   padding: 0;
-}
-.screen-about-company .title-about-company {
   position: relative;
   padding-left: 436px;
   padding-bottom: 21px;
@@ -149,7 +150,7 @@ body {
   align-items: center;
   gap: 20px;
 }
-.screen-about-company .title-about-company::before, .screen-about-company .title-about-company::after {
+.screen-about-company .title::before, .screen-about-company .title::after, .news .title::before, .news .title::after {
   content: "";
   display: block;
   width: 100px;
@@ -158,13 +159,14 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 2px, 50% 2px;
 }
-.screen-about-company .title-about-company::before {
+.screen-about-company .title::before, .news .title::before {
   background-position: 0 0, 100% 100%;
 }
-.screen-about-company .title-about-company::after {
+.screen-about-company .title::after, .news .title::after {
   background-position: 0 0, 0 100%;
 }
-.screen-about-company .text-about-company {
+
+.text-about-company {
   margin: 0;
   padding: 0;
   width: 1044px;
