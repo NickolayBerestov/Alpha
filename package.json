@@ -11,5 +11,9 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.3.0"
+  },
+  "dependencies": {
+    "fullpage.js": "^4.0.20",
+    "jquery": "^3.7.1"
   }
 }

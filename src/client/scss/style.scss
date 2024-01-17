@@ -131,7 +131,7 @@ body {
         justify-content: flex-start;
 
         .title {
-            padding-top: 50px;
+            padding-top: 60px;
         }
 
         .text-about-company {
@@ -151,6 +151,16 @@ body {
 .photo-container {
     display: flex;
     padding-right: 120px;
+
+    .photo1 {
+        width: 82%;
+        padding-left: 15px;
+    }
+
+    .photo4 {
+        width: 76%;
+        margin-left: 19px;
+    }
 
     &-left {
         display: flex;
@@ -207,4 +217,21 @@ body {
 
 .news {
     padding-top: 0px;
+
+    .link-button-container {
+        padding-top: 71px;
+    
+        .link-button {
+            color: white;
+            border: 2px solid white;
+            padding: 15px 41px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    
+        .link-button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    }
 }
+
