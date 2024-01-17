@@ -25,7 +25,7 @@ body {
 
 .main-header {
     background: url('../images/background.jpg') no-repeat center center / cover;
-
+    height: 100vh;
 }
 
 .navigation-container {
@@ -70,11 +70,11 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    height: 100vh;
     background: linear-gradient(to right,
             rgba(255, 255, 255, 0) 459px,
             rgba(0, 0, 0, 0.6) 444px 902px,
             rgba(255, 255, 255, 0) 902px);
+    height: 91vh;
 
     &-text {
         padding-top: 240px;
@@ -146,7 +146,7 @@ body {
             padding-top: 90px;
         }
     }
-}   
+}
 
 .photo-container {
     display: flex;
@@ -175,7 +175,8 @@ body {
     .photo2 {
         width: 83%;
         padding-left: 35px;
-        padding-bottom: 15px;;
+        padding-bottom: 15px;
+        ;
     }
 
     .photo3 {
@@ -227,4 +228,5 @@ body {
 
 .news {
     padding-top: 0px;
+    height: 100vh;
 }

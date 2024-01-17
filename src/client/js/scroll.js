@@ -1,34 +1,27 @@
-function slide() {
-    h = document.documentElement.clientHeight
-    $(".first-screen, .screen-about-company, .news").css('height', h);
-};
-$(window).resize(slide);
-$(document).ready(slide);
+SmoothScroll({
+    // Время скролла 400 = 0.4 секунды
+    animationTime: 1200,
+    // Размер шага в пикселях 
+    stepSize: window.innerHeight,
 
+    // Дополнительные настройки:
 
-$(document).bind('mousewheel DOMMouseScroll', function (event) {
-    scroll(event);
-});
+    // Ускорение 
+    accelerationDelta: 30,
+    // Максимальное ускорение
+    accelerationMax: 2,
 
-var num = 1;
-var scrolling = false;
+    // Поддержка клавиатуры
+    keyboardSupport: true,
+    // Шаг скролла стрелками на клавиатуре в пикселях
+    arrowScroll: window.innerHeight,
 
-function scroll(event) {
-    event.preventDefault();
-    if (!scrolling) {
-        scrolling = true;
-        if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-            num--;
-            num = num < 1 ? 1 : num;
-        } else {
-            num++;
-            num = num > 3 ? 3 : num;
-        }
+    // Pulse (less tweakable)
+    // ratio of "tail" to "acceleration"
+    pulseAlgorithm: true,
+    pulseScale: 4,
+    pulseNormalize: 1,
 
-        $('html, body').animate({
-            scrollTop: $(".num" + num).offset().top
-        }, 500, "linear", function () {
-            scrolling = false;
-        });
-    }
-}
+    // Поддержка тачпада
+    touchpadSupport: true,
+})
