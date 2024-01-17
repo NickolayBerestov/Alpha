@@ -128,7 +128,7 @@ body {
   justify-content: flex-start;
 }
 .screen-about-company .text-container .title {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 .screen-about-company .text-container .text-about-company {
   font-family: "MontserratAlternates", sans-serif;
@@ -145,6 +145,14 @@ body {
 .photo-container {
   display: flex;
   padding-right: 120px;
+}
+.photo-container .photo1 {
+  width: 82%;
+  padding-left: 15px;
+}
+.photo-container .photo4 {
+  width: 76%;
+  margin-left: 19px;
 }
 .photo-container-left {
   display: flex;
@@ -193,6 +201,19 @@ body {
 
 .news {
   padding-top: 0px;
+}
+.news .link-button-container {
+  padding-top: 71px;
+}
+.news .link-button-container .link-button {
+  color: white;
+  border: 2px solid white;
+  padding: 15px 41px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.news .link-button-container .link-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */
