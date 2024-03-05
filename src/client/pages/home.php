@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<html lang="ru">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Better alchohol distributor">
 	<meta name="keywords" content="">
-	<link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-	<link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp">
-	<link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicons/favicon.svg" type="src/clinet/image/svg+xml">
+	<link rel="shortcut icon" href="img/favicons/favicon.webp" type="src/clinet/image/webp">
+	<link rel="shortcut icon" href="img/favicons/favicon.png" type="src/clinet/image/x-icon">
+	<link rel="stylesheet" href="src/client/css/style.css">
 	<title>Alpha Spirits</title>
 </head>
 
 <body>
 	<header class="main-header">
 		<div class="navigation-container">
-			<a class="logo-link" href="index.html"><img class="main-logo" src="images/logo.png"
-					alt="Логотип Альфа Спиритс"></a>
+			<a class="logo-link" href="index.html"><img class="main-logo" src="src/client/images/logo.png" alt="Логотип Альфа Спиритс"></a>
 			<nav class="main-navigation">
 				<ul class="navigation-list">
 					<li class="navigation-item"><a class="navigation-link" href="#">О Компании</a></li>
 					<li class="navigation-item"><a class="navigation-link" href="#">Карьера</a></li>
 					<li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
+					<li class="navigation-item enter-button"><a class="navigation-link" href="#">Вход</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -69,8 +67,7 @@
 			<h2 class="title">Новости</h2>
 		</section>
 	</main>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
-		integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
 	<script src="js/scroll.js"></script>
 </body>
 
