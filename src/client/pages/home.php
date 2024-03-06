@@ -54,12 +54,12 @@
 			</div>
 			<div class="photo-container">
 				<div class="photo-container-left">
-					<img src="images/image 2.jpg" class="photo1">
-					<img src="images/image 4.jpg" class="photo3">
+					<img src="../images/image 2.jpg" class="photo1">
+					<img src="../images/image 4.jpg" class="photo3">
 				</div>
 				<div class="photo-container-right">
-					<img src="images/image 5.jpg" class="photo4">
-					<img src="images/image 3.jpg" class="photo2">
+					<img src="../images/image 5.jpg" class="photo4">
+					<img src="../images/image 3.jpg" class="photo2">
 				</div>
 			</div>
 		</section>
@@ -68,7 +68,7 @@
 		</section>
 	</main>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
-	<script src="js/scroll.js"></script>
+	<script src="../js/scroll.js"></script>
 </body>
 
 </html>
