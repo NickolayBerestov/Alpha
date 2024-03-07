@@ -20,6 +20,7 @@ class ComposerStaticInit769ff85de7e8f70171df9206fdb4efd4
         ),
         'A' => 
         array (
+            'App\\Core\\' => 9,
             'App\\' => 4,
         ),
     );
@@ -32,6 +33,10 @@ class ComposerStaticInit769ff85de7e8f70171df9206fdb4efd4
         'Symfony\\Component\\VarDumper\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+        'App\\Core\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/core',
         ),
         'App\\' => 
         array (

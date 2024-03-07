@@ -16,13 +16,13 @@
 <body>
 	<header class="main-header">
 		<div class="navigation-container">
-			<a class="logo-link" href="index.html"><img class="main-logo" src="src/client/images/logo.png" alt="Логотип Альфа Спиритс"></a>
+			<a class="logo-link" href=""><img class="main-logo" src="src/client/images/logo.png" alt="Логотип Альфа Спиритс"></a>
 			<nav class="main-navigation">
 				<ul class="navigation-list">
 					<li class="navigation-item"><a class="navigation-link" href="#">О Компании</a></li>
 					<li class="navigation-item"><a class="navigation-link" href="#">Карьера</a></li>
 					<li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
-					<li class="navigation-item enter-button"><a class="navigation-link" href="#">Вход</a></li>
+					<li class="navigation-item enter-button"><a class="navigation-link" href="login">Вход</a></li>
 				</ul>
 			</nav>
 		</div>

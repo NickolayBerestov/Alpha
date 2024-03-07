@@ -6,6 +6,6 @@ class HomeController
 {
     public function index(): void
     {
-        include_once APP_PATH . '/src/client/pages/home.php';
+        include_once APP_PATH . '/client/pages/home.php';
     }
 }
