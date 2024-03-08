@@ -2,10 +2,12 @@
 
 namespace App\Controllers;
 
-class LoginController
+use App\Core\Controller\Controller;
+
+class LoginController extends Controller
 {
     public function index(): void
     {
-        include_once APP_PATH . '/client/pages/login.php';
+        $this->view('login');
     }
 }

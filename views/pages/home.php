@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<html lang="ru">
+<?php
+/**
+ * @var \App\Core\View\View $view
+ */
+?>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Better alchohol distributor">
-	<meta name="keywords" content="">
-	<link rel="shortcut icon" href="img/favicons/favicon.svg" type="src/clinet/image/svg+xml">
-	<link rel="shortcut icon" href="img/favicons/favicon.webp" type="src/clinet/image/webp">
-	<link rel="shortcut icon" href="img/favicons/favicon.png" type="src/clinet/image/x-icon">
-	<link rel="stylesheet" href="src/client/css/style.css">
-	<title>Alpha Spirits</title>
-</head>
 
-<body>
+<?php $view->component('start') ?>
 	<header class="main-header">
 		<div class="navigation-container">
-			<a class="logo-link" href=""><img class="main-logo" src="src/client/images/logo.png" alt="Логотип Альфа Спиритс"></a>
+			<a class="logo-link" href=""><img class="main-logo" src="/images/logo.png" alt="Логотип Альфа Спиритс"></a>
 			<nav class="main-navigation">
 				<ul class="navigation-list">
 					<li class="navigation-item"><a class="navigation-link" href="#">О Компании</a></li>
@@ -54,12 +46,12 @@
 			</div>
 			<div class="photo-container">
 				<div class="photo-container-left">
-					<img src="../images/image 2.jpg" class="photo1">
-					<img src="../images/image 4.jpg" class="photo3">
+					<img src="/images/image 2.jpg" class="photo1">
+					<img src="/images/image 4.jpg" class="photo3">
 				</div>
 				<div class="photo-container-right">
-					<img src="../images/image 5.jpg" class="photo4">
-					<img src="../images/image 3.jpg" class="photo2">
+					<img src="/images/image 5.jpg" class="photo4">
+					<img src="/images/image 3.jpg" class="photo2">
 				</div>
 			</div>
 		</section>
@@ -68,7 +60,5 @@
 		</section>
 	</main>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
-	<script src="../js/scroll.js"></script>
-</body>
-
-</html>
+	<script src="/js/scroll.js"></script>
+<?php $view->component('end') ?>
