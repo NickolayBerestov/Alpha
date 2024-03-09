@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Core\Controller\Controller;
-use App\Core\Validator\Validator;
 
 class UserController extends Controller
 {
@@ -14,13 +13,21 @@ class UserController extends Controller
     
     public function store(): void
     {
-        $data = ['name' => ''];
-        $rules = ['name' => ['required', 'min:3', 'max:255']];
+        $validation = $this->request()->validate([
+            'name' => ['required', 'min:3', 'max:50']
+        ]);
 
-        $validator = new Validator();
+        if (! $validation) {
+            foreach ($this->request()->errors() as $field => $errors) {
+                $this->session()->set($field, $errors);
+            }
+            $this->redirect('/admin/users/add');
+        }
 
-        dd($validator->validate($data, $rules));
+        $id = $this->db()->insert('users', [
+            'name' => $this->request()->input('name')
+        ]);
 
-        dd($this->request()->input('name'));
+        dd("User added successfully with id: $id");
     }
 }

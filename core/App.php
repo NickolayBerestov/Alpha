@@ -3,8 +3,6 @@
 namespace App\Core;
 
 use App\Core\Container\Container;
-use App\Core\Http\Request;
-use App\Core\Router\Router;
 
 class App
 {

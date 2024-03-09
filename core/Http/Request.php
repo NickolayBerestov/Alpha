@@ -2,8 +2,12 @@
 
 namespace App\Core\Http;
 
-class Request
+use App\Core\Validator\ValidatorInterface;
+
+class Request implements RequestInterface
 {
+    private ValidatorInterface $validator;
+
     public function __construct(
         public readonly array $get,
         public readonly array $post,
@@ -31,5 +35,25 @@ class Request
     public function input(string $key, $default = null): mixed
     {
         return $this->post[$key] ?? $this->get[$key] ?? $default;
+    }
+
+    public function setValidator(ValidatorInterface $validator): void
+    {
+        $this->validator = $validator;
+    }
+
+    public function validate(array $rules): bool
+    {
+        $data = [];
+        foreach ($rules as $field => $rule) {
+            $data[$field] = $this->input($field);
+        }
+
+        return $this->validator->validate($data, $rules);
+    }
+
+    public function errors(): array
+    {
+        return $this->validator->errors();
     }
 }
